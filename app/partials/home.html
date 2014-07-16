@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="page-header">
+		<h1>Home page</h1>
+	</div>
+	<form class="form-inline" role="form" ng-submit="log()">
+	   	<div class="form-group">
+	      <label class="sr-only" for="name">Name</label>
+	      <input type="text" class="form-control" id="name" ng-model="data" placeholder="Enter Name">
+	   	</div>
+
+   		<button type="submit" class="btn btn-primary">Submit</button>
+   		<button type="submit" ng-click="values=[]" class="btn btn-warning">Clear</button>
+	</form>
+	<p>
+		<ol>
+			<li ng-repeat="v in values"><h4>{{v.val}}</h4></li>
+		</ol>
+	</p>
+	
+
+
+</div>
